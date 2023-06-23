@@ -13,4 +13,13 @@ public class Banco {
             System.out.println("Saldo insuficiente para realizar o saque.");
         }
     }
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+            System.out.println("Depósito de R$" + valor + " realizado com sucesso.\nSaldo atual depois do deposito: "+saldo);
+        } else {
+            System.out.println("Valor inválido para depósito.");
+        }
+    }
+
 }
